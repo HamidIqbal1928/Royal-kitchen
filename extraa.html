@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Royal Kitchen Family Restaurant | Pure Food, Pure Comfort</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'royal-dark': '#111111',
+                'royal-gold': '#FFC107',
+                'royal-gold-dark': '#e6af06',
+              },
+              fontFamily: {
+                'playfair': ['"Playfair Display"', 'serif'],
+                'poppins': ['Poppins', 'sans-serif'],
+              },
+              animation: {
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              }
+            }
+          }
+        }
+    </script></link></head>
+<body class="bg-royal-dark text-white font-poppins selection:bg-royal-gold selection:text-royal-dark"><div class="grain-overlay"></div>
+<!-- BEGIN: StickyHeader -->
+<header class="fixed top-0 left-0 w-full z-50 glass-header" data-purpose="main-navigation">
+<nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<div class="flex items-center">
+<a class="text-2xl font-playfair font-bold text-royal-gold tracking-tighter" href="#">
+          ROYAL <span class="text-white">KITCHEN</span>
+</a>
+</div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-sm font-medium hover:text-royal-gold transition-colors" href="#home">Home</a>
+<a class="text-sm font-medium hover:text-royal-gold transition-colors" href="#categories">Menu</a>
+<a class="text-sm font-medium hover:text-royal-gold transition-colors" href="#deals">Special Offers</a>
+<a class="text-sm font-medium hover:text-royal-gold transition-colors" href="#services">Event Hall</a>
+<a class="text-sm font-medium hover:text-royal-gold transition-colors" href="#footer">Contact</a>
+</div>
+<div class="flex items-center">
+<button class="bg-royal-gold text-royal-dark px-6 py-2.5 rounded-full font-bold text-sm gold-glow transition-all duration-300">
+          ORDER NOW
+        </button>
+</div>
+</nav>
+</header>
+<!-- END: StickyHeader -->
+<!-- BEGIN: HeroSection -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden" data-purpose="hero-section" id="home">
+<!-- Background Cinematic Overlay -->
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-royal-dark/60 via-royal-dark/40 to-royal-dark z-10"></div>
+<img alt="Sizzling Platter" class="w-full h-full object-cover animate-ken-burns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmc0taE8pjLKkY6M1Lh1381SV8SYXvPE96c3eSMOWlgJBHj9yrud1ef_JH7paEVf909zZKxSeQtj9Q3ycnvyHnd8zJsbragN20yAtsl0FB8jq2ng4kjZQIX_uDggKJPnbzYaps3hC5TERhEHYyNdOagRynDiOsWVJYIrEofB1pqsxTJz5Vfgj9uRoBi0CXOpL8H90Y7lHXOtcIjOhFdRendqYhbrpbb-xeb9S8j1B5HnmcRURbszT1ZvRNa28U1kUPwfaIFGPX4q8"/>
+</div>
+<div class="relative z-20 text-center px-4 max-w-4xl mx-auto animate-fade-up">
+<h2 class="text-royal-gold font-playfair italic text-xl md:text-2xl mb-4">Welcome to Excellence</h2>
+<h1 class="text-5xl md:text-8xl font-playfair font-bold leading-tight mb-6">
+        Pure Food, <br/> <span class="text-royal-gold">Pure Comfort.</span>
+</h1>
+<p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+        Experience the Royal Taste of Burewala. From sizzling Karahis to authentic BBQ, we bring you flavors that define royalty.
+      </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="w-full sm:w-auto px-10 py-4 bg-royal-gold text-royal-dark font-bold rounded-sm gold-glow transition-all" href="#categories">
+          EXPLORE FULL MENU
+        </a>
+<a class="w-full sm:w-auto px-10 py-4 border border-royal-gold text-royal-gold font-bold rounded-sm hover:bg-royal-gold hover:text-royal-dark transition-all" href="#services">
+          BOOK A TABLE / HALL
+        </a>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+<div class="w-6 h-10 border-2 border-royal-gold/50 rounded-full flex justify-center p-1">
+<div class="w-1 h-2 bg-royal-gold rounded-full"></div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: CategoriesGrid -->
+<section class="py-24 px-4 bg-royal-dark mask-reveal" data-purpose="menu-categories" id="categories">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-royal-gold font-playfair text-lg uppercase tracking-[0.3em] mb-2">Taste of Royalty</h2>
+<h3 class="text-4xl md:text-5xl font-playfair font-bold">Our Signature Categories</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+<!-- Category 1 -->
+<div class="category-card relative h-80 overflow-hidden group cursor-pointer rounded-lg" data-purpose="category-item">
+<img alt="Royal Handi" class="category-image w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXlxPBWVWWjK72Tu3wWNQGsQJbjNGiSpAsW2V32e8DMM05Xn5cF5FQ-94M4lN_FW1d_iF5DfzsRk826Xb8n0WNq1ER9aY28kljJQafplpHhW54645m6p4YzrJvJETC3btTwBkG7E1ZxE0LfmGYoEbsYRkIYFZzhU_0v7Wz1zL-dFEGrO4DleK86deYS_wjlJO8ycoL5IJqWwMMQkyLArHLB3UJLBjTtErQowy20K4AmTCVJ8qA-Vap1OLdIQhWJwF-wIwv9r3M0PI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<h4 class="text-xl font-bold mb-1">Royal Handi &amp; Karahi</h4>
+<div class="w-8 h-1 bg-royal-gold transition-all group-hover:w-full"></div>
+</div>
+</div>
+<!-- Category 2 -->
+<div class="category-card relative h-80 overflow-hidden group cursor-pointer rounded-lg" data-purpose="category-item">
+<img alt="BBQ Platters" class="category-image w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmQhSABUIpbLCEEc-BlVfxLUhXu7DESZ4fLtIHv0aD1_XdDUC18GBvIpIekPIQPIVO-Ig8qoopyJ0kx9FYAws5zg8afrRlfOIzrt4X8k4rrUOLEm52XoRQcL5uNJTucoGVikoxFrEZVpcUXi6ry4cGrdUo8tQtWzEzdFaJEzq6DX7QfkG9ctE5VV0zbhbOjiivw1pj7iAemgW4L1yDEze1-rTDBbzxiHdGBuR6xensviOQ--SmcDQiixNWIo34wRzceeYb4ztd1RY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<h4 class="text-xl font-bold mb-1">Royal BBQ Platters</h4>
+<div class="w-8 h-1 bg-royal-gold transition-all group-hover:w-full"></div>
+</div>
+</div>
+<!-- Category 3 -->
+<div class="category-card relative h-80 overflow-hidden group cursor-pointer rounded-lg" data-purpose="category-item">
+<img alt="Fast Food" class="category-image w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaRbItTfYAyzPaV7en4wZOZJIaZAwGqNkiMPkKICM-HHnM4SsnDpDSRkhp7bDqJRhNCzLX33PiJUDrKMN297sP8HWEwqkqqGwgGg6g-tn5MBzyXnSgdUbbaVFH6_w-xXtg7nGffKjFf8fGrlcAWaOzdbPaeYZL54poazUUhEBwoK3tV17BxO4wYONUv8nKZfiBd5BjVUEj_MRpfHBpxlU6MvIygTzjuM3kKxKTvHSp_BhWe456GSTz9vDlKSZKARuQgyoYWzet2Jw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<h4 class="text-xl font-bold mb-1">Fast Food</h4>
+<div class="w-8 h-1 bg-royal-gold transition-all group-hover:w-full"></div>
+</div>
+</div>
+<!-- Category 4 -->
+<div class="category-card relative h-80 overflow-hidden group cursor-pointer rounded-lg" data-purpose="category-item">
+<img alt="Chinese Food" class="category-image w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSQ0erCIWK-IO6ir_SvSU8pVtZ-pmJ3XpxjQ-HH40oKV6NgDPGxMOE5L7G6hrDcRew0zluhuSmc-MptRqzr0Phyvz2pLhoo0ElJzSjr1D7oM8fKl_lkXRDljx0mv23sKSvRhAWE2yAF3Irp3VR3pF0X5JoPVLTWIP4pJziMAieaKP1fF7FQ2sy0dfTmBVd0GdBkfes7dz8gLIdnmYd9y5mwoVHBE6f2RTZqXIUwDg5KegPlPwHSKhPvKvAylEB-NKfx4D0t8iKtKw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<h4 class="text-xl font-bold mb-1">Chinese &amp; Thai</h4>
+<div class="w-8 h-1 bg-royal-gold transition-all group-hover:w-full"></div>
+</div>
+</div>
+<!-- Category 5 -->
+<div class="category-card relative h-80 overflow-hidden group cursor-pointer rounded-lg" data-purpose="category-item">
+<img alt="Seafood" class="category-image w-full h-full object-cover transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5gZbZfCBl1cnZUYkmma5vZWEhaj96av7ufP0WREMoDvPFwf_9Ft1tmLqWveAff9NumYerahNoLX8ZRRd3xU5MQ46eSO_zu82pS6APXBg9nqk4jBsWRXTlKyGXwMeRM8fcle__9AR7xx4qpM-URf0CFU2AUUVm1YRu_Po-bnYFOWApQ6b86HsAZtLIIwiVt8nah1aJhHTn6S10T8MQkApucgXvfXhMdB-SCRekxLulPPff--P01EUdgUmYy9jz2S4_qJcb5bmKWYU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<h4 class="text-xl font-bold mb-1">Seafood</h4>
+<div class="w-8 h-1 bg-royal-gold transition-all group-hover:w-full"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: CategoriesGrid -->
+<!-- BEGIN: DealsSection -->
+<section class="py-24 bg-[#0a0a0a] mask-reveal" data-purpose="special-deals" id="deals">
+<div class="max-w-7xl mx-auto px-4">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<h2 class="text-royal-gold font-playfair text-lg uppercase tracking-widest mb-2">Limited Time</h2>
+<h3 class="text-4xl md:text-5xl font-playfair font-bold">Profusion &amp; Royal Deals</h3>
+</div>
+<a class="text-royal-gold border-b border-royal-gold pb-1 hover:text-white hover:border-white transition-all" href="#">View All Offers</a>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- Deal 1 -->
+<div class="flex flex-col sm:flex-row bg-royal-dark border border-white/5 rounded-xl overflow-hidden hover:border-royal-gold/30 transition-all duration-500 group">
+<div class="sm:w-1/2 overflow-hidden">
+<img alt="Family Deal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhniU5YaM66k65K4Fjb_QHmWZ6sqegljoikDq1a0A9G1Xa4sW96oqYzKfZCgwT-qaWUBZkVaJ1AQUeHcsz4QEPuwHmG5bPf3_YAhmoysXAkmH_70T94Qn3hEKlM-30TvBQBH8iMx0yrnWrDWAk3CP4y5410QtLjr0Y4LMWziEUMePMMcdBj5hk9xg3-2unMD5j64XLvXqrp3NUz7hOp6HviGFnReNiVVA-RbCo8OpZfSOoiBcGGHqWquY8rPHYcIDW59mxH249o-I"/>
+</div>
+<div class="p-8 sm:w-1/2 flex flex-col justify-between">
+<div>
+<span class="inline-block px-3 py-1 bg-red-600 text-[10px] font-bold tracking-widest uppercase mb-4 rounded-sm">Popular</span>
+<h4 class="text-2xl font-playfair font-bold mb-2">Grand Family Platter</h4>
+<p class="text-gray-400 text-sm mb-6">Full Karahi + 6 Seekh Kabab + 4 Roti + 1.5L Drink</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-3xl font-bold text-royal-gold">Rs. 2,499</span>
+<span class="text-gray-500 line-through">Rs. 3,200</span>
+</div>
+</div>
+</div>
+<!-- Deal 2 -->
+<div class="flex flex-col sm:flex-row bg-royal-dark border border-white/5 rounded-xl overflow-hidden hover:border-royal-gold/30 transition-all duration-500 group">
+<div class="sm:w-1/2 overflow-hidden">
+<img alt="Pizza Deal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-fuLgqtJpWp9G-XvHK8oCbLVmS7N_TiqrRXDrgxBoyh3poNXFUxTU7QxjoLzFDYv5BUksO0fJEZrCP09FhWlTJs8LUfT5fxtEJA5SRgCC1Q656xDy5jHNSbqF6WO4WR-G5XKKVKhzBBRoU55paFfLa5WDXQ5LKuyYUqW3SFNP73k2_JWXzxOPkP7Fl6YQHNRsoWEjX-EO1cM5F9OAZ-K8Q7hSB4hs5mw1lXTYrGz7JFmev7ChT9XdieM6oeAkO731gWYdKFHcfOg"/>
+</div>
+<div class="p-8 sm:w-1/2 flex flex-col justify-between">
+<div>
+<span class="inline-block px-3 py-1 bg-royal-gold text-royal-dark text-[10px] font-bold tracking-widest uppercase mb-4 rounded-sm">Chef's Choice</span>
+<h4 class="text-2xl font-playfair font-bold mb-2">Royal Pizza Feast</h4>
+<p class="text-gray-400 text-sm mb-6">2 Large Pizzas + Wings + 1.5L Soft Drink</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-3xl font-bold text-royal-gold">Rs. 1,899</span>
+<span class="text-gray-500 line-through">Rs. 2,400</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: DealsSection -->
+<!-- BEGIN: ServicesSection -->
+<section class="py-24 bg-black overflow-hidden mask-reveal" data-purpose="chef-signature" id="signature-series">
+<div class="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-16">
+<div class="lg:w-1/2 relative group">
+<div class="absolute -inset-4 border border-royal-gold/20 rounded-2xl group-hover:border-royal-gold/40 transition-colors duration-700"></div>
+<img alt="Smoked Royal Lamb Shank" class="relative z-10 rounded-xl shadow-2xl grayscale-[20%] group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPwN8LGMlcJYOIL4KPERQtSRmEFICoz1AP16SZlmELk_0AZlrX23T6DI3ld6DbvTMHwiDM5VgVosfz0FCUccXm84xmK0xZiOEJouOu3lmhjttha3fOLAjMWJpreN2gVjO18w9ocMusLGgviSd0m_fbPB4yv9wZz0W6ltYlXaQV2KDUfF3i41Mopt0rPL1Qo31zVudGzBygYGfzNEkXFdBpzRCMVridsA9nrdMEV2kwvPFGYJs_iWQuw4-YnOAewAsvwhtr2ohOdR8"/>
+</div>
+<div class="lg:w-1/2">
+<h2 class="text-royal-gold font-playfair italic text-xl mb-4">Chef's Signature Series</h2>
+<h3 class="text-5xl font-playfair font-bold mb-6">Smoked Royal <br/> Lamb Shank</h3>
+<div class="w-24 h-1 bg-royal-gold mb-8"></div>
+<p class="text-gray-300 text-lg leading-relaxed mb-8 font-light italic">
+        "The story begins in the high valleys of the North, where the finest salt-marsh lamb is sourced. Slow-cooked for 14 hours over oak-wood fire and glazed with our secret 21-spice reduction, this dish is a tribute to the ancient Mughal feasts."
+      </p>
+<button class="px-10 py-4 border border-royal-gold text-royal-gold font-bold rounded-sm gold-glow transition-all uppercase tracking-widest text-sm">Experience Royalty</button>
+</div>
+</div>
+</section><section class="py-24 bg-royal-dark mask-reveal" data-purpose="testimonials" id="testimonials">
+<div class="max-w-7xl mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-royal-gold font-playfair text-lg uppercase tracking-[0.3em] mb-2">Guest Experience</h2>
+<h3 class="text-4xl font-playfair font-bold">Words from the Table</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-10 bg-black/40 border border-white/5 rounded-2xl backdrop-blur-sm">
+<div class="flex text-royal-gold mb-6">
+<span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span>
+</div>
+<p class="text-gray-300 italic mb-8">"The ambiance is as royal as the name suggests. The Mutton Handi transported me back to the traditional courts of Punjab. A truly premium experience in Burewala."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-royal-gold/20 rounded-full flex items-center justify-center font-bold text-royal-gold">AH</div>
+<div>
+<h5 class="font-bold text-sm">Ali Haider</h5>
+<p class="text-xs text-gray-500">Food Critic</p>
+</div>
+</div>
+</div>
+<div class="p-10 bg-black/40 border border-royal-gold/20 rounded-2xl backdrop-blur-sm transform scale-105 shadow-2xl">
+<div class="flex text-royal-gold mb-6">
+<span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span>
+</div>
+<p class="text-gray-300 italic mb-8">"An absolute gem. The level of service and the attention to culinary detail is unmatched. Their BBQ platters are easily the best I've had in years."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-royal-gold/20 rounded-full flex items-center justify-center font-bold text-royal-gold">SK</div>
+<div>
+<h5 class="font-bold text-sm">Sara Khan</h5>
+<p class="text-xs text-gray-500">Verified Guest</p>
+</div>
+</div>
+</div>
+<div class="p-10 bg-black/40 border border-white/5 rounded-2xl backdrop-blur-sm">
+<div class="flex text-royal-gold mb-6">
+<span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span>
+</div>
+<p class="text-gray-300 italic mb-8">"Booking the event hall for my sister's wedding was the best decision. The management is professional, and the food was praised by every single guest."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-royal-gold/20 rounded-full flex items-center justify-center font-bold text-royal-gold">MK</div>
+<div>
+<h5 class="font-bold text-sm">M. Kashif</h5>
+<p class="text-xs text-gray-500">Corporate Client</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section class="py-24 px-4 bg-royal-dark mask-reveal" data-purpose="restaurant-services" id="services">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Service 1: Delivery -->
+<div class="text-center p-8 border border-white/5 rounded-2xl hover:bg-white/5 transition-all group">
+<div class="w-20 h-20 bg-royal-gold/10 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:bg-royal-gold transition-colors">
+<svg class="w-10 h-10 text-royal-gold group-hover:text-royal-dark" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</div>
+<h4 class="text-2xl font-playfair font-bold mb-4">Free Home Delivery</h4>
+<p class="text-gray-400 mb-6 italic">Enjoy royal flavors at your doorstep within Burewala.</p>
+<a class="text-xl font-bold text-royal-gold block" href="tel:0673352017">067-3352017</a>
+</div>
+<!-- Service 2: Events -->
+<div class="text-center p-8 border border-white/5 rounded-2xl hover:bg-white/5 transition-all group">
+<div class="w-20 h-20 bg-royal-gold/10 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:bg-royal-gold transition-colors">
+<svg class="w-10 h-10 text-royal-gold group-hover:text-royal-dark" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</div>
+<h4 class="text-2xl font-playfair font-bold mb-4">Lawn &amp; Event Hall</h4>
+<p class="text-gray-400 mb-6">Celebrate your milestones in our spacious, elegant halls and lush lawns.</p>
+<button class="px-6 py-2 border border-royal-gold text-royal-gold rounded-full hover:bg-royal-gold hover:text-royal-dark transition-all">Book Venue</button>
+</div>
+<!-- Service 3: Signature -->
+<div class="text-center p-8 border border-white/5 rounded-2xl hover:bg-white/5 transition-all group">
+<div class="w-20 h-20 bg-royal-gold/10 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:bg-royal-gold transition-colors">
+<svg class="w-10 h-10 text-royal-gold group-hover:text-royal-dark" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</div>
+<h4 class="text-2xl font-playfair font-bold mb-4">Signature Series</h4>
+<p class="text-gray-400 mb-6">Our master chefs' secret recipes, curated exclusively for the royal family.</p>
+<button class="px-6 py-2 border border-royal-gold text-royal-gold rounded-full hover:bg-royal-gold hover:text-royal-dark transition-all">Discover</button>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ServicesSection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-black pt-20 pb-10 border-t border-white/5" data-purpose="site-footer" id="footer">
+<div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="md:col-span-1">
+<a class="text-3xl font-playfair font-bold text-royal-gold tracking-tighter block mb-6" href="#">
+          ROYAL KITCHEN
+        </a>
+<p class="text-gray-500 text-sm leading-relaxed mb-8">
+          The heart of fine dining in Burewala. Experience heritage and taste combined in every bite.
+        </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-royal-gold hover:text-royal-dark transition-all" href="#">FB</a>
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-royal-gold hover:text-royal-dark transition-all" href="#">IG</a>
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-royal-gold hover:text-royal-dark transition-all" href="#">TW</a>
+</div>
+</div>
+<div class="md:col-span-1">
+<h5 class="text-white font-bold mb-6 uppercase tracking-widest text-xs">Quick Links</h5>
+<ul class="space-y-4 text-gray-400 text-sm">
+<li><a class="hover:text-royal-gold transition-colors" href="#">Our Story</a></li>
+<li><a class="hover:text-royal-gold transition-colors" href="#">Menu Highlights</a></li>
+<li><a class="hover:text-royal-gold transition-colors" href="#">Reservation</a></li>
+<li><a class="hover:text-royal-gold transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h5 class="text-white font-bold mb-6 uppercase tracking-widest text-xs">Contact Us</h5>
+<p class="text-gray-400 text-sm mb-4">
+          Thq Road Inside Quaid E Azam Stadium<br/>Burewala, Punjab
+        </p>
+<p class="text-gray-400 text-sm mb-4">Tel: 067-3352017</p>
+<p class="text-gray-400 text-sm">Email: info@royalkitchen.pk</p>
+</div>
+<div class="md:col-span-1 flex flex-col items-start md:items-end">
+<h5 class="text-white font-bold mb-6 uppercase tracking-widest text-xs">Scan Menu</h5>
+<div class="bg-white p-2 rounded-lg">
+<img alt="Menu QR Code" class="w-24 h-24" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQthEu9lODKR3AMUZvwD2KU5y-tS_MYhI8P2mp_z8QFvbYALsT7zHLRuXpmwIBVSzmRMfhIT4eH-eeMZKa61YavOfR5Kf8KPMAMRbgG7_k8_scNyyifUzOPtnU9SnKmr2b4QLNz8WNK4f_4pGjeVjFhGRlG1Uc3NnOd6eItsyMcwvkJOzsLdO2uUu81hUBSDA1eo60KoppKVGDjYcQt1FWGHJ7E7V63LWf13yLLQZ1k1DsYl9uRIO1OJXwuxamifHAbaH2gLYtoVU"/>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-4 pt-10 border-t border-white/5 text-center text-gray-600 text-xs">
+<p>© 2024 Royal Kitchen Family Restaurant Burewala. All rights reserved.</p>
+</div>
+</footer>
+<!-- END: Footer -->
+<!-- BEGIN: FloatingOrderButton -->
+<div class="fixed bottom-8 right-8 z-[100]" data-purpose="floating-cta">
+<button class="bg-royal-gold text-royal-dark w-16 h-16 rounded-full shadow-2xl flex items-center justify-center animate-pulse-slow gold-glow group">
+<svg class="w-8 h-8 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span class="absolute right-20 bg-royal-gold text-royal-dark px-4 py-1 rounded-md font-bold text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">ORDER NOW</span>
+</button>
+</div>
+<!-- END: FloatingOrderButton -->
+</body></html>
