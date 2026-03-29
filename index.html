@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Royal Kitchen - Pure Food, Pure Comfort</title>
+    <!-- Updated Fonts: Bebas Neue, Playfair Display & Poppins -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
@@ -42,6 +43,7 @@
 
         body {
             font-family: 'Poppins', sans-serif;
+            /* Poppins for all normal text */
             background-color: var(--black);
             color: var(--white);
             overflow-x: hidden;
@@ -90,6 +92,21 @@
             text-align: center;
         }
 
+        .preloader-logo {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .preloader-logo-img {
+            width: 100%;
+            height: 100%;
+            animation: crownBounce 1.5s infinite;
+        }
+
         .preloader-crown {
             font-size: 60px;
             color: var(--gold);
@@ -97,8 +114,9 @@
         }
 
         .preloader-text {
-            font-family: 'Playfair Display', serif;
-            font-size: 24px;
+            font-family: 'Bebas Neue', sans-serif;
+            /* Bebas Neue for brand text */
+            font-size: 36px;
             color: var(--gold);
             margin-top: 15px;
             letter-spacing: 5px;
@@ -185,6 +203,19 @@
             align-items: center;
         }
 
+        .header-logo-img {
+            width: 55px;
+            height: auto;
+            margin-right: -10px;
+            filter: drop-shadow(0 0 10px rgba(255, 193, 7, 0.3));
+            transition: var(--transition-fast);
+        }
+
+        .logo:hover .header-logo-img {
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 20px rgba(255, 193, 7, 0.6));
+        }
+
         .logo {
             display: flex;
             align-items: center;
@@ -198,7 +229,6 @@
             width: 50px;
             height: 50px;
             flex-shrink: 0;
-            /* FIX: Keeps logo perfectly circular */
             background: linear-gradient(135deg, var(--gold), var(--gold-dark));
             border-radius: 50%;
             display: flex;
@@ -246,12 +276,13 @@
         }
 
         .logo-name {
-            font-family: 'Playfair Display', serif;
-            font-size: 22px;
-            font-weight: 700;
+            font-family: 'Bebas Neue', sans-serif;
+            /* Bebas Neue for logo Name */
+            font-size: 28px;
+            font-weight: 400;
             color: var(--white);
             line-height: 1.1;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
         }
 
         .logo-name span {
@@ -387,7 +418,6 @@
             overflow: hidden;
             box-shadow: 0 5px 25px rgba(255, 193, 7, 0.3);
             white-space: nowrap;
-            /* FIX: Keeps text on one line */
             flex-shrink: 0;
         }
 
@@ -444,7 +474,6 @@
             bottom: 0;
         }
 
-        /* FIX: Perfect "X" Close Animation */
         .hamburger.active span:nth-child(1) {
             top: 50%;
             transform: translateY(-50%) rotate(45deg);
@@ -488,6 +517,7 @@
         .mobile-menu .nav-link {
             font-size: 24px;
             font-family: 'Playfair Display', serif;
+            /* Subheadings font for mobile menu */
             padding: 15px 30px;
             transform: translateY(30px);
             opacity: 0;
@@ -576,11 +606,10 @@
         }
 
         /* ============================================
-           FIX: MAIN CONTENT WRAPPER 
+           MAIN CONTENT WRAPPER 
         ============================================ */
         .main-content {
             display: block;
-            /* Removed flex center that was squishing everything */
             width: 100%;
             position: relative;
         }
@@ -714,10 +743,12 @@
         }
 
         .hero-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 85px;
-            font-weight: 800;
+            font-family: 'Bebas Neue', sans-serif;
+            /* Main Headings: Bebas Neue */
+            font-size: 100px;
+            font-weight: 400;
             line-height: 1.1;
+            letter-spacing: 3px;
             color: var(--white);
             margin-bottom: 25px;
             text-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
@@ -832,12 +863,13 @@
         }
 
         .section-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 42px;
-            font-weight: 700;
+            font-family: 'Bebas Neue', sans-serif;
+            /* Main Headings: Bebas Neue */
+            font-size: 55px;
+            font-weight: 400;
+            letter-spacing: 2px;
             color: var(--white);
             margin-bottom: 10px;
-            text-transform: capitalize;
         }
 
         .section-title span {
@@ -957,6 +989,7 @@
 
         .deal-title {
             font-family: 'Playfair Display', serif;
+            /* Subheadings: Playfair */
             font-size: 22px;
             font-weight: 700;
             color: #fff;
@@ -1129,6 +1162,7 @@
 
         .bento-title {
             font-family: 'Playfair Display', serif;
+            /* Subheadings: Playfair */
             font-size: 28px;
             font-weight: 700;
             color: var(--white);
@@ -1208,9 +1242,11 @@
         }
 
         .event-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 46px;
-            font-weight: 700;
+            font-family: 'Bebas Neue', sans-serif;
+            /* Main Headings: Bebas Neue */
+            font-size: 55px;
+            font-weight: 400;
+            letter-spacing: 2px;
             color: var(--white);
             margin-bottom: 15px;
             line-height: 1.2;
@@ -1262,6 +1298,7 @@
             gap: 15px;
             white-space: nowrap;
             font-family: 'Playfair Display', serif;
+            /* Subheadings: Playfair */
             font-size: 18px;
             color: rgba(255, 193, 7, 0.3);
             letter-spacing: 2px;
@@ -1294,6 +1331,7 @@
 
         .footer-col-title {
             font-family: 'Playfair Display', serif;
+            /* Subheadings: Playfair */
             font-size: 20px;
             font-weight: 600;
             color: var(--white);
@@ -1720,7 +1758,7 @@
             }
 
             .event-title {
-                font-size: 36px;
+                font-size: 45px;
             }
         }
 
@@ -1740,7 +1778,7 @@
             }
 
             .hero-title {
-                font-size: 65px;
+                font-size: 80px;
             }
 
             .badge-1 {
@@ -1760,11 +1798,11 @@
             }
 
             .section-title {
-                font-size: 32px;
+                font-size: 40px;
             }
 
             .hero-title {
-                font-size: 50px;
+                font-size: 65px;
             }
 
             .hero-desc {
@@ -1821,7 +1859,7 @@
             }
 
             .event-title {
-                font-size: 28px;
+                font-size: 38px;
             }
 
             .event-desc {
@@ -1897,7 +1935,7 @@
             }
 
             .logo-name {
-                font-size: 18px;
+                font-size: 24px;
             }
 
             .logo-tagline {
@@ -1916,7 +1954,6 @@
                 font-size: 11px;
             }
 
-            /* Ensures button doesn't break */
             .marquee-item {
                 font-size: 14px;
             }
@@ -1926,7 +1963,7 @@
             }
 
             .hero-title {
-                font-size: 40px;
+                font-size: 55px;
             }
 
             .hero-subtitle {
@@ -2016,7 +2053,6 @@
             transform: translateX(10px);
         }
 
-        /* Menu Image */
         .menu-item-img {
             width: 90px;
             height: 90px;
@@ -2033,7 +2069,6 @@
             transform: rotate(10deg) scale(1.05);
         }
 
-        /* Menu Details */
         .menu-item-info {
             flex-grow: 1;
         }
@@ -2047,6 +2082,7 @@
 
         .menu-item-title {
             font-family: 'Playfair Display', serif;
+            /* Subheadings: Playfair */
             font-size: 20px;
             font-weight: 700;
             color: var(--white);
@@ -2059,7 +2095,6 @@
             color: var(--gold);
         }
 
-        /* The Dotted Line between Title and Price */
         .menu-item-dots {
             flex-grow: 1;
             border-bottom: 2px dotted rgba(255, 193, 7, 0.3);
@@ -2082,7 +2117,6 @@
             margin: 0;
         }
 
-        /* Hide items that don't match the active tab */
         .menu-item.hide {
             display: none;
         }
@@ -2099,19 +2133,14 @@
             }
         }
 
-        /* Center Button Area */
         .menu-btn-container {
             text-align: center;
             margin-top: 60px;
         }
 
-        /* ============================================
-           RESPONSIVE DESIGN FOR MENU
-        ============================================ */
         @media (max-width: 992px) {
             .menu-list {
                 grid-template-columns: 1fr;
-                /* 1 column on tablets */
                 gap: 20px;
             }
         }
@@ -2121,9 +2150,7 @@
                 justify-content: flex-start;
                 flex-wrap: nowrap;
                 overflow-x: auto;
-                /* Enable horizontal scroll on mobile */
                 padding-bottom: 10px;
-                /* Hide scrollbar visually but keep functionality */
                 -ms-overflow-style: none;
                 scrollbar-width: none;
             }
@@ -2134,7 +2161,6 @@
 
             .tab-btn {
                 white-space: nowrap;
-                /* Keep tab text on one line */
                 font-size: 13px;
                 padding: 8px 20px;
             }
@@ -2167,8 +2193,6 @@
         }
 
         @media (max-width: 480px) {
-
-            /* On very small phones, remove the dots and stack title/price nicely */
             .signature-menu {
                 padding: 0 15px;
             }
@@ -2189,6 +2213,144 @@
             }
         }
 
+        /* <!-- ============================================ */
+   /* FAST FOOD SECTION STYLES */
+/* ============================================ --> */
+   
+    .fastfood-grid {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+    }
+
+    .fastfood-item {
+        background: var(--black-medium);
+        border: 1px solid rgba(255, 193, 7, 0.1);
+        border-radius: 20px;
+        overflow: hidden;
+        transition: var(--transition-medium);
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fastfood-item:hover {
+        transform: translateY(-10px);
+        border-color: var(--gold);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 193, 7, 0.2);
+    }
+
+    .fastfood-image-wrapper {
+        position: relative;
+        width: 100%;
+        height: 240px;
+        overflow: hidden;
+    }
+
+    .fastfood-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .fastfood-item:hover .fastfood-image {
+        transform: scale(1.1) rotate(2deg);
+    }
+
+    .fastfood-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(to top, var(--black-medium), transparent);
+        z-index: 1;
+    }
+
+    .fastfood-content {
+        padding: 25px 20px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+    }
+
+    .fastfood-title {
+        font-family: 'Playfair Display', serif;
+        font-size: 22px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 10px;
+        transition: 0.3s;
+    }
+
+    .fastfood-item:hover .fastfood-title {
+        color: var(--gold);
+    }
+
+    .fastfood-desc {
+        color: var(--gray);
+        font-size: 13px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        flex-grow: 1;
+    }
+
+    .fastfood-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: auto;
+        padding-top: 15px;
+        border-top: 1px dashed rgba(255, 255, 255, 0.1);
+    }
+
+    .fastfood-price {
+        color: var(--gold);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .fastfood-price span {
+        font-size: 14px;
+        color: var(--gray-dark);
+        margin-right: 2px;
+    }
+
+    .fastfood-btn-container {
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    /* Fast Food Section Responsive */
+    @media (max-width: 768px) {
+        .fastfood-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .fastfood-image-wrapper {
+            height: 200px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .fastfood-grid {
+            grid-template-columns: 1fr;
+        }
+        .fastfood-title {
+            font-size: 20px;
+        }
+        .fastfood-price {
+            font-size: 22px;
+        }
+    }
+
+
         /* ============================================
            RESERVATION SECTION
         ============================================ */
@@ -2199,7 +2361,6 @@
             overflow: hidden;
         }
 
-        /* Abstract Gold Glow Background */
         .reservation-section::before {
             content: '';
             position: absolute;
@@ -2222,7 +2383,6 @@
             z-index: 2;
         }
 
-        /* Left Side: Images & Info */
         .res-image-wrapper {
             position: relative;
             border-radius: 20px;
@@ -2242,7 +2402,6 @@
             transform: scale(1.05);
         }
 
-        /* Floating Info Card on the Image */
         .res-floating-card {
             position: absolute;
             bottom: 30px;
@@ -2257,8 +2416,9 @@
         }
 
         .res-floating-title {
-            color: var(--white);
             font-family: 'Playfair Display', serif;
+            /* Subheadings: Playfair */
+            color: var(--white);
             font-size: 20px;
             margin-bottom: 15px;
             font-weight: 700;
@@ -2278,7 +2438,6 @@
             font-size: 18px;
         }
 
-        /* Right Side: The Form */
         .res-form-wrapper {
             background: rgba(255, 255, 255, 0.02);
             border: 1px solid rgba(255, 193, 7, 0.1);
@@ -2288,8 +2447,11 @@
         }
 
         .res-form-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 36px;
+            font-family: 'Bebas Neue', sans-serif;
+            /* Main Headings: Bebas Neue */
+            font-size: 45px;
+            font-weight: 400;
+            letter-spacing: 2px;
             color: var(--white);
             margin-bottom: 10px;
             line-height: 1.2;
@@ -2317,7 +2479,6 @@
             gap: 8px;
         }
 
-        /* Span 2 columns for the message box */
         .full-width {
             grid-column: span 2;
         }
@@ -2344,7 +2505,6 @@
             outline: none;
         }
 
-        /* Fixing dropdown color issue in dark mode */
         .res-form select option {
             background: var(--black);
             color: var(--white);
@@ -2385,9 +2545,6 @@
             box-shadow: 0 10px 25px rgba(255, 193, 7, 0.4);
         }
 
-        /* ============================================
-           RESPONSIVE DESIGN FOR RESERVATION
-        ============================================ */
         @media (max-width: 1024px) {
             .reservation-container {
                 gap: 30px;
@@ -2395,14 +2552,12 @@
 
             .res-floating-card {
                 left: 10px;
-                /* Bring it inside on smaller laptops */
             }
         }
 
         @media (max-width: 992px) {
             .reservation-container {
                 grid-template-columns: 1fr;
-                /* Stack on tablet */
             }
 
             .res-image-wrapper {
@@ -2423,7 +2578,6 @@
 
             .res-form {
                 grid-template-columns: 1fr;
-                /* 1 column form on mobile */
             }
 
             .full-width {
@@ -2439,7 +2593,7 @@
             }
 
             .res-form-title {
-                font-size: 28px;
+                font-size: 36px;
             }
 
             .res-floating-card {
@@ -2467,7 +2621,9 @@
     ============================================ -->
     <div class="preloader" id="preloader">
         <div class="preloader-content">
-            <div class="preloader-crown"><i class="fas fa-crown"></i></div>
+            <div class="preloader-logo">
+                <img src="./loader.png" alt="Royal Kitchen Logo" class="preloader-logo-img">
+            </div>
             <div class="preloader-text">ROYAL KITCHEN</div>
             <div class="preloader-bar"></div>
         </div>
@@ -2485,7 +2641,7 @@
         <div class="header-container">
             <!-- Logo -->
             <a href="#" class="logo">
-                <div class="logo-icon"><i class="fas fa-crown"></i></div>
+                <img src="logo.png" alt="Logo" class="header-logo-img">
                 <div class="logo-text">
                     <span class="logo-name">ROYAL <span>KITCHEN</span></span>
                     <span class="logo-tagline">Family Restaurant</span>
@@ -2539,14 +2695,13 @@
         </div>
 
         <div class="mobile-social">
-             <a href="https://www.facebook.com/RKburewala/" title="Facebook"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/p/DVdndXxiDbU/?igsh=MWExbmtpZGhtdHBrYQ==" title="Instagram"><i
-                            class="fab fa-instagram"></i></a>
-                    <a href="mailto:rkburewala@gmail.com" title="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="https://wa.me/923012449222" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/RKburewala/" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/p/DVdndXxiDbU/?igsh=MWExbmtpZGhtdHBrYQ==" title="Instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="mailto:rkburewala@gmail.com" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/923012449222" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
     </div>
 
@@ -2748,6 +2903,169 @@
             </div>
         </section>
 
+            <!-- ============================================
+     FAST FOOD SECTION (UPDATED FROM MENU)
+============================================ -->
+<section class="section-padding" id="fastfood">
+    <div class="section-header">
+        <div class="section-icon"><i class="fas fa-hamburger"></i></div>
+        <h2 class="section-title">Royal <span>Fast Food</span></h2>
+        <p class="section-subtitle">Signature Pizzas, Premium Burgers & Sandwiches</p>
+    </div>
+
+    <!-- Fast Food Grid -->
+    <div class="fastfood-grid">
+        
+        <!-- Item 1: Crown Crust Pizza -->
+        <div class="fastfood-item">
+            <div class="fastfood-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=600&auto=format&fit=crop"
+                    alt="Royal Crown Crust Pizza" class="fastfood-image">
+                <div class="fastfood-overlay"></div>
+            </div>
+            <div class="fastfood-content">
+                <h3 class="fastfood-title">Royal Crown Crust</h3>
+                <p class="fastfood-desc">Fvt style special yummy sauce with 4 types of chicken, onion, cheese, olives & capsicum.</p>
+                <div class="fastfood-footer">
+                    <span class="fastfood-price"><span>From Rs.</span> 690</span>
+                    <a href="#order" class="btn-add" title="Order Now"><i class="fas fa-plus"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 2: Lawa Zinger Burger -->
+        <div class="fastfood-item">
+            <div class="fastfood-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=600&auto=format&fit=crop"
+                    alt="Lawa Zinger Burger" class="fastfood-image">
+                <div class="fastfood-overlay"></div>
+            </div>
+            <div class="fastfood-content">
+                <h3 class="fastfood-title">Lawa Zinger Burger</h3>
+                <p class="fastfood-desc">Our ultimate premium crispy zinger loaded with melting cheese and signature lava sauce.</p>
+                <div class="fastfood-footer">
+                    <span class="fastfood-price"><span>Rs.</span> 670</span>
+                    <a href="#order" class="btn-add" title="Order Now"><i class="fas fa-plus"></i></a>
+                </div>
+            </div>
+        </div>
+
+      
+
+        <!-- Item 4: Tower Burger -->
+        <div class="fastfood-item">
+            <div class="fastfood-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?q=80&w=600&auto=format&fit=crop"
+                    alt="Tower Burger" class="fastfood-image">
+                <div class="fastfood-overlay"></div>
+            </div>
+            <div class="fastfood-content">
+                <h3 class="fastfood-title">Tower Burger</h3>
+                <p class="fastfood-desc">Double stacked crispy chicken fillets with fresh lettuce, cheese slice, and signature mayo.</p>
+                <div class="fastfood-footer">
+                    <span class="fastfood-price"><span>Rs.</span> 520</span>
+                    <a href="#order" class="btn-add" title="Order Now"><i class="fas fa-plus"></i></a>
+                </div>
+            </div>
+        </div>
+
+       
+
+        <!-- Item 6: Malai Boti Pizza -->
+        <div class="fastfood-item">
+            <div class="fastfood-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=600&auto=format&fit=crop"
+                    alt="Malai Boti Pizza" class="fastfood-image">
+                <div class="fastfood-overlay"></div>
+            </div>
+            <div class="fastfood-content">
+                <h3 class="fastfood-title">Malai Boti Pizza</h3>
+                <p class="fastfood-desc">A Blend of Malai Sauce with combination of Black Pepper, Fresh Tomatoes, Onions, Mushrooms & Jalapeno.</p>
+                <div class="fastfood-footer">
+                    <span class="fastfood-price"><span>From Rs.</span> 690</span>
+                    <a href="#order" class="btn-add" title="Order Now"><i class="fas fa-plus"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 7: Bazinga Burger -->
+        <div class="fastfood-item">
+            <div class="fastfood-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1610440042657-612c34d95e9f?q=80&w=600&auto=format&fit=crop"
+                    alt="Bazinga Burger" class="fastfood-image">
+                <div class="fastfood-overlay"></div>
+            </div>
+            <div class="fastfood-content">
+                <h3 class="fastfood-title">Bazinga Burger</h3>
+                <p class="fastfood-desc">Premium crispy and juicy chicken burger made for the ultimate fast food lovers.</p>
+                <div class="fastfood-footer">
+                    <span class="fastfood-price"><span>Rs.</span> 450</span>
+                    <a href="#order" class="btn-add" title="Order Now"><i class="fas fa-plus"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 8: Zinger Burger -->
+        <div class="fastfood-item">
+            <div class="fastfood-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?q=80&w=600&auto=format&fit=crop"
+                    alt="Zinger Burger" class="fastfood-image">
+                <div class="fastfood-overlay"></div>
+            </div>
+            <div class="fastfood-content">
+                <h3 class="fastfood-title">Zinger Burger</h3>
+                <p class="fastfood-desc">Classic crispy fried chicken fillet with fresh lettuce and signature creamy mayo.</p>
+                <div class="fastfood-footer">
+                    <span class="fastfood-price"><span>Rs.</span> 380</span>
+                    <a href="#order" class="btn-add" title="Order Now"><i class="fas fa-plus"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 9: Pizza Fries -->
+        <div class="fastfood-item">
+            <div class="fastfood-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?q=80&w=600&auto=format&fit=crop"
+                    alt="Pizza Fries" class="fastfood-image">
+                <div class="fastfood-overlay"></div>
+            </div>
+            <div class="fastfood-content">
+                <h3 class="fastfood-title">Pizza Fries</h3>
+                <p class="fastfood-desc">Golden fries loaded with pizza sauce, chicken chunks, and melted cheese baked to perfection.</p>
+                <div class="fastfood-footer">
+                    <span class="fastfood-price"><span>From Rs.</span> 400</span>
+                    <a href="#order" class="btn-add" title="Order Now"><i class="fas fa-plus"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 10: Thunder Wrap -->
+        <div class="fastfood-item">
+            <div class="fastfood-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?q=80&w=600&auto=format&fit=crop"
+                    alt="Thunder Wrap" class="fastfood-image">
+                <div class="fastfood-overlay"></div>
+            </div>
+            <div class="fastfood-content">
+                <h3 class="fastfood-title">Thunder Chicken Wrap</h3>
+                <p class="fastfood-desc">Delicious grilled chicken wrapped in fresh tortilla with veggies and signature sauces.</p>
+                <div class="fastfood-footer">
+                    <span class="fastfood-price"><span>Rs.</span> 590</span>
+                    <a href="#order" class="btn-add" title="Order Now"><i class="fas fa-plus"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Fast Food CTA Button -->
+    <div class="fastfood-btn-container">
+          <a href="./royal kitchen menu.pdf" download="Royal_Kitchen_Menu.pdf" class="btn-secondary">
+        <i class="fas fa-download"></i> Download Full PDF Menu
+    </a>
+    </div>
+</section>
+
         <!-- ============================================
              EVENT / WEDDING HALL CALL TO ACTION
         ============================================ -->
@@ -2883,12 +3201,17 @@
 
                 <!-- CTA Button -->
                 <div class="menu-btn-container">
-                    <a href="#full-menu" class="btn-secondary">
-                        <i class="fas fa-book-open"></i> Download Full PDF Menu
-                    </a>
+                     <a href="./royal kitchen menu.pdf" download="Royal_Kitchen_Menu.pdf" class="btn-secondary">
+        <i class="fas fa-download"></i> Download Full PDF Menu
+    </a>
                 </div>
             </div>
         </section>
+
+
+    
+
+
 
         <!-- ============================================
              TABLE RESERVATION SECTION
@@ -2898,7 +3221,6 @@
 
                 <!-- Left Side: Image & Timings -->
                 <div class="res-image-wrapper">
-                    <!-- High quality restaurant interior placeholder -->
                     <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1000&auto=format&fit=crop"
                         alt="Royal Kitchen Interior" class="res-image">
 
@@ -3006,7 +3328,7 @@
             <!-- Column 1 -->
             <div class="footer-about">
                 <a href="#" class="logo">
-                    <div class="logo-icon"><i class="fas fa-crown"></i></div>
+                   <img src="logo.png" alt="Logo" class="header-logo-img">
                     <div class="logo-text">
                         <span class="logo-name">ROYAL <span>KITCHEN</span></span>
                         <span class="logo-tagline">Family Restaurant</span>
